@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'INF Docs',
-  tagline: 'Documentation made easy by Fred.',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Documentation made easy for developer onboarding or project continuation.',
+  url: 'https://inf-documentation.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
