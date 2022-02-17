@@ -2,46 +2,54 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Project Setup
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Quickstart for **Infinite Gamings in less than 10 minutes**.
 
 ## Getting Started
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Get started by **cloning our repositories**.
 
 ### What you'll need
 
 - [Node.js](https://nodejs.org/en/download/) version 14 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [Repositories](https://github.com/team-embers) required to have a github account & SSH key.
+- [Package Managers](https://github.com/team-embers)
+  - [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/)
+- [ReactJS](https://reactjs.org/) need to have knowledge in ReactJS since, the frontend is built with react.
+- [StrapiJS](https://strapi.io/) knowledgeable in MVC & javascript.
+- [MongoDB](https://www.mongodb.com/) our database program.
 
-## Generate a new site
+## Run Backend
 
-Generate a new Docusaurus site using the **classic template**.
+Backend is built with StrapiJS **Node.js Headless CMS**.
 
-The classic template will automatically be added to your project after you run the command:
+Important to not upgrade any packages especially strapi since strapi v4, support for mongodb is depreciated:
 
 ```bash
-npm init docusaurus@latest my-website classic
+git clone https://github.com/team-embers/backend-infinite-gaming.git
 ```
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+```bash
+yarn 
+```
 
-## Start your site
+The command <strong><em>yarn</em></strong> installs all necessary dependencies you need to run our backend (you can also use npm install if youre using npm as your package manager).
+
+## Start backend server
+
+<strong>note:</strong> must create .env file and ask for env variables to devs assigned to the project.
 
 Run the development server:
 
 ```bash
-cd my-website
-npm run start
+cd <directory-backend>
+yarn develop
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+The `cd` command changes the directory you're working with. In order to work with your newly cloned backend project, you'll need to navigate the terminal there.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+The `yarn develop` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:1338/.
