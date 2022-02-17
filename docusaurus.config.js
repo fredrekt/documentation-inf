@@ -106,7 +106,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Infinite Gamings, Inc. Built with Docusaurus.`,
+        copyright: `Made with ❤️ by Fred Garingo.`,
       },
       prism: {
         theme: lightCodeTheme,
