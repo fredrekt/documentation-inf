@@ -37,3 +37,9 @@ All of the calculations are rendered real time.
 2. User Wins 
 3. Win amount will be commissioned to user's respective uplines (root, branch, distributor, store)
 4. Total Commission points to downlines will be deducted from User Wallet
+
+
+
+## Testing
+
+All the necessary materials or resources is on the Inifnite Gamings sheet which will be provided to you by a Blueprint Dev.
