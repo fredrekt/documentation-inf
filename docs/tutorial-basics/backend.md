@@ -12,6 +12,12 @@ Important to not upgrade any packages especially strapi since strapi v4, support
 git clone https://github.com/team-embers/backend-infinite-gaming.git
 ```
 
+Use mongorestore to use our dump to have content. Must have mongodb already & MongoDB Tools.
+
+```bash
+mongorestore --db databasename --verbose \path\dump\<dumpfolder>
+```
+
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
 ```bash
