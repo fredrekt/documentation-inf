@@ -2,54 +2,38 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# Commission System
 
-Docusaurus can manage multiple versions of your docs.
+A quickstart guide to understanding our Commission System.
 
-## Create a docs version
+## Player's Uplines
 
-Release a version 1.0 of your project:
+Meaning which downline accounts should be the commission points be credited upon. Should consist of 1 Root, 1 Distributor, 1 Branch & 1 Store. Commission varies of either Betting or Winning. They both have different percentages when the points is distributed it really depends on the Downline Account's Percentages.
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+Winning & Betting has 2 types of games `Evolution & Pragmatic Play`:
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+- `Live Casino` right now only betting commission is only enabled.
+- `Slot Games` are basically just 50/50 chance.
 
-Your docs now have 2 versions:
+## Multi Level Marketing
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+To understand fully of the commission system and its hierachy here's a chart this is the Partner Management.
 
-## Add a Version Dropdown
+![Partner Management Binary Tree](../assets/images/mlm.png) <br/>
 
-To navigate seamlessly across versions, add a version dropdown.
 
-Modify the `docusaurus.config.js` file:
+All of the calculations are rendered real time. 
 
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
+## Workflow Betting Commission
 
-The docs version dropdown appears in your navbar:
+1. User Bets
+2. User Losses 
+3. Bet amount will be commissioned to user's respective uplines (root, branch, distributor, store)
+4. Total Commission points to downlines will be deducted from Operator Wallet
 
-![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
+## Workflow Winning Commission
 
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+1. User Bets
+2. User Wins 
+3. Win amount will be commissioned to user's respective uplines (root, branch, distributor, store)
+4. Total Commission points to downlines will be deducted from User Wallet
